@@ -5,7 +5,7 @@ f = open(os.getcwd() + '/results/results_json.json')
 data = json.load(f)
 expected_failures = 8
 actual_failures = 0
-expected_passes = 9
+expected_passes = 10
 actual_passes = 0
 for i in data['results']['passed_checks']:
   actual_passes = actual_passes + 1
