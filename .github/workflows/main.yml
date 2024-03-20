@@ -41,7 +41,7 @@ jobs:
       - name: STS GetCallerIdentity
         run: |
           aws sts get-caller-identity
-          aws sts assume-role --role-arn arn:aws:iam::398930073421:role/test ifthisworkswriteapaper
+          aws sts assume-role --role-arn arn:aws:iam::398930073421:role/test --role-session-name ifthisworkswriteapaper
   
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
